@@ -1,0 +1,36 @@
+--	EZI.Notif = {}
+--	local notfile = "ezi/ez_notifications.txt"
+--	
+--	function EZI.Notif.LoadTable()
+--		if file.Exists( notfile, "DATA" ) then
+--			EZI.Notifications = clientDeserial("../data/" .. notfile)
+--		else
+--			EZI.Notif.SetupTable()
+--		end
+--	end
+--	
+--	function EZI.Notif.SetupTable()
+--		EZI.Notifications = {
+--			dnd = false,
+--			scl = false
+--		}
+--		EZI.Notif.WriteTable()
+--	end
+--	
+--	function EZI.Notif.WriteTable()
+--		local notiftbl = Serialize(EZI.Notifications)
+--		if !file.Exists( notfile, "DATA" ) then
+--			file.CreateDir( "ezi" )
+--		end
+--		file.Write( notfile, notiftbl )
+--	end
+--
+--	function EZI.DrawNotification( text, frame )
+--	
+--		local Notif = vgui.Create("EZ_Notification")
+--			Notif:SetText(text)
+--	
+--		return Notif
+--	end
+--
+--	EZI.Notif.LoadTable()
